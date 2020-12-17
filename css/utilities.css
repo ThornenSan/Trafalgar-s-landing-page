@@ -163,3 +163,29 @@
 .p-5 {
     padding: 4rem;
 }
+
+.bg-left-center{
+    background-repeat:no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+}
+.bg-right-center{
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+.bg-top-left{
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+}
+.bg-top-right{
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+}
+.bg-bottom-left{
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+}

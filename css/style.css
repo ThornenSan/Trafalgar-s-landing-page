@@ -183,7 +183,8 @@ h2 {
 }
 
 .slider .slider-card {
-    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    background:url('../assets/12dots.svg') right -40px top -10px, linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    background-repeat: no-repeat;
     border-radius: 24px;
 }
 
@@ -232,7 +233,7 @@ h2 {
 
 /* Footer */
 .footer{
-    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    background: url('/assets/dots.svg') no-repeat left bottom,linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
     height: 432px;
     color: var(--white-color);
 }
