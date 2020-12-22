@@ -36,6 +36,11 @@ h2 {
     margin: 10px 0;
 }
 
+button {
+    outline: none;
+    border: none;
+}
+
 /* Navbar */
 
 .navbar {
@@ -223,10 +228,105 @@ h2 {
     justify-content: space-between;
     width: 40%;
 
+
 }
 
+.slider-indicator button {
+    background-color: white;
+}
+
+.slider-card {
+    display: none;
+}
+
+
+
+/* Slideshow container */
+.slider-container {
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.carousel__button--left,
+.carousel__button--right {
+    cursor: pointer;
+    /* position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px; */
+    transition: 0.6s ease;
+    /* border-radius: 0 3px 3px 0; */
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+/* .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        } */
+
+/* On hover, add a black background color with a little bit see-through */
+.carousel__button--left:hover,
+.carousel__button--right:hover {
+    background-color: var(--primary-color);
+}
+
+/* The dots/bullets/indicators */
+.bullet {
+    cursor: pointer;
+    /* height: 15px;
+    width: 15px; */
+    /* margin: 0 2px; */
+    background-color: var(--primary-color);
+    /* border-radius: 50%; */
+    /* display: inline; */
+    /* transition: background-color 0.6s ease; */
+
+}
+
+.active,
+.bullet:hover {
+    transform: scale(1.5);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* 
 .slider-indicator img {
-    opacity: .3;
+    opacity: .5;
+
 }
 
 .slider-indicator img:hover {
@@ -235,10 +335,11 @@ h2 {
 }
 
 
-.slider-indicator button {
-    border: 0;
-    background-color: white;
-}
+
+li.current-slide img {
+    opacity: 1;
+
+} */
 
 
 /* Article */
@@ -477,7 +578,7 @@ h2 {
     }
 
     /*slider*/
-    .slider-bullet ul {
+    /* .slider-bullet ul {
         list-style-type: none;
     }
 
@@ -490,7 +591,7 @@ h2 {
         justify-content: space-between;
         width: 50%;
 
-    }
+    } */
 
 
     /* Article */
@@ -545,7 +646,7 @@ h2 {
 
     /*slider*/
 
-    .slider-bullet ul {
+    /* .slider-bullet ul {
         list-style-type: none;
     }
 
@@ -558,7 +659,7 @@ h2 {
         justify-content: space-between;
         width: 70%;
         align-items: center;
-    }
+    } */
 
     /* Article */
     .article p {
@@ -608,7 +709,7 @@ h2 {
 
     /*Slider*/
     /*newly added*/
-    .slider-bullet ul {
+    /* .slider-bullet ul {
         list-style-type: none;
         overflow: hidden;
     }
@@ -624,7 +725,7 @@ h2 {
         width: 100%;
 
 
-    }
+    } */
 
 
     /* Footer */
@@ -655,7 +756,7 @@ h2 {
 
     /*Slider*/
     /*newly added*/
-    .slider-bullet ul {
+    /* .slider-bullet ul {
         list-style-type: none;
         overflow: hidden;
     }
@@ -671,5 +772,5 @@ h2 {
         width: 100%;
 
 
-    }
+    } */
 }

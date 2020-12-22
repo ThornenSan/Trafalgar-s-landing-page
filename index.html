@@ -148,40 +148,99 @@
     <section class="slider my-5">
         <div class="container bg-bottom-left"
             style="background-image:url('assets/less_dots.svg');background-position: -1% 90%;">
-            <div class="slider-card card py-5">
-                <h2 class="text-center lead">What our customer are saying</h2>
-                <div class="underline"></div>
-                <div class="grid">
-                    <div class="profile flex">
-                        <img src="./assets/image 1.png" alt="profile">
-                        <div class="text">
-                            <h3>Edward Newgate</h3>
-                            <p>Founder Circle</p>
+            <div class="slider-container container">
+                <div class="slider-card card fade py-5">
+                    <h2 class="text-center lead">What our customer are saying 1</h2>
+                    <div class="underline"></div>
+                    <div class="grid">
+                        <div class="profile flex">
+                            <img src="./assets/image 1.png" alt="profile">
+                            <div class="text">
+                                <h3>Edward Newgate</h3>
+                                <p>Founder Circle</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>“Our dedicated patient engagement app and
+                                web portal allow you to access information instantaneously (no tedeous form, long calls,
+                                or administrative hassle) and securely”</p>
                         </div>
                     </div>
-                    <div class="desc">
-                        <p>“Our dedicated patient engagement app and
-                            web portal allow you to access information instantaneously (no tedeous form, long calls,
-                            or administrative hassle) and securely”</p>
+                </div>
+
+                <div style="background-color: red;" class="slider-card card fade py-5">
+                    <h2 class="text-center lead">What our customer are saying 2</h2>
+                    <div class="underline"></div>
+                    <div class="grid">
+                        <div class="profile flex">
+                            <img src="./assets/image 1.png" alt="profile">
+                            <div class="text">
+                                <h3>Edward Newgate</h3>
+                                <p>Founder Circle</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>“Our dedicated patient engagement app and
+                                web portal allow you to access information instantaneously (no tedeous form, long calls,
+                                or administrative hassle) and securely”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background-color: green;" class="slider-card card fade py-5">
+                    <h2 class="text-center lead">What our customer are saying 3</h2>
+                    <div class="underline"></div>
+                    <div class="grid">
+                        <div class="profile flex">
+                            <img src="./assets/image 1.png" alt="profile">
+                            <div class="text">
+                                <h3>Edward Newgate</h3>
+                                <p>Founder Circle</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>“Our dedicated patient engagement app and
+                                web portal allow you to access information instantaneously (no tedeous form, long calls,
+                                or administrative hassle) and securely”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background-color: yellow;" class="slider-card card fade py-5">
+                    <h2 class="text-center lead">What our customer are saying 4</h2>
+                    <div class="underline"></div>
+                    <div class="grid">
+                        <div class="profile flex">
+                            <img src="./assets/image 1.png" alt="profile">
+                            <div class="text">
+                                <h3>Edward Newgate</h3>
+                                <p>Founder Circle</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>“Our dedicated patient engagement app and
+                                web portal allow you to access information instantaneously (no tedeous form, long calls,
+                                or administrative hassle) and securely”</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="slider-indicator container">
                 <div class="prev">
-                    <button class="carousel__button carousel__button--left is-hidden">
+                    <button class="carousel__button carousel__button--left" onclick="plusSlides(-1)"> 
                         <img src="assets/prev.png">
                     </button>
                 </div>
                 <div class="slider-bullet">
-                    <ul>
-                        <li><button class="bullet"><img src="assets/bullet.png"></button></li>
-                        <li><button class="bullet"><img src="assets/bullet.png"></button></li>
-                        <li><button class="bullet"><img src="assets/bullet.png"></button></li>
-                        <li><button class="bullet"><img src="assets/bullet.png"></button></li>
+                    <ul class="slider-bullet-container">
+                        <li><button class="bullet" onclick="currentSlide(1)"><img src="assets/bullet.png"></button></li>
+                        <li><button class="bullet" onclick="currentSlide(2)"><img src="assets/bullet.png"></button></li>
+                        <li><button class="bullet" onclick="currentSlide(3)"><img src="assets/bullet.png"></button></li>
+                        <li><button class="bullet" onclick="currentSlide(4)"><img src="assets/bullet.png"></button></li>
                     </ul>
                 </div>
                 <div class="next">
-                    <button class="carousel__button carousel__button--right is-hidden">
+                    <button class="carousel__button carousel__button--right " onclick="plusSlides(1)">
                         <img src="assets/next.png">
                     </button>
                 </div>
