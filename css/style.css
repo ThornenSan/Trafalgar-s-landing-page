@@ -714,6 +714,18 @@ button {
 
     /*Slider*/
 
+    .slider .profile{
+        padding: 0 1rem;
+    }
+
+    .slider .profile img{
+        width: 100px;
+    }
+
+    .slider .slider-card {
+        padding: 1rem 0;
+    }
+
     .slider-bullet ul {
         list-style-type: none;
         overflow: hidden;
@@ -761,9 +773,13 @@ button {
 
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
 
     /*Slider*/
+
+    .slider .slider-container{
+        padding: 0;
+    }
 
     .slider-bullet ul {
         list-style-type: none;
