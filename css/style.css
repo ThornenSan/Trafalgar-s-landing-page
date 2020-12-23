@@ -269,7 +269,7 @@ button {
 
 }
 
-.active,
+.active-slide,
 .bullet:hover {
     transform: scale(1.3);
     opacity: 1;
